@@ -1,7 +1,7 @@
 language: python
 
 install:
-  - sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-lang-cyrillic
+  - sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-lang-cyrillic texlive-generic-extra
 
 
 script:
@@ -14,6 +14,7 @@ addons:
               texlive-fonts-extra 
               texlive-latex-extra 
               texlive-lang-cyrillic
+              texlive-generic-extra
 
 
 after_success:
