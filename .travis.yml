@@ -3,6 +3,7 @@ language: python
 install:
   - sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-lang-cyrillic texlive-generic-extra
   - git checkout $TRAVIS_BRANCH
+  - echo $TRAVIS_COMMIT_MESSAGE
   - mkdir -p src
   - mkdir -p compiled
 
