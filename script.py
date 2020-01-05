@@ -1,5 +1,8 @@
 import os
 
+if 'Travis build' in os.environ['TRAVIS_COMMIT_MESSAGE']:
+	return
+
 sources_dir = 'src/'
 compiled_dir = 'compiled/'
 
