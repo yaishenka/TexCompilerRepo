@@ -2,6 +2,7 @@ language: python
 
 install:
   - sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-lang-cyrillic texlive-generic-extra
+  - git checkout $TRAVIS_BRANCH
 
 
 script:
@@ -22,4 +23,5 @@ after_success:
   - git config --global user.name "Travis CI"
   - git add -A
   - git commit --message "Travis build - $TRAVIS_BUILD_NUMBER"
-  - git push origin
+  - git push
+  
