@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/yaishenka/TexCompilerRepo.svg?branch=master)](https://travis-ci.com/yaishenka/TexCompilerRepo)
 # TexCompilerRepo
 
 Simple repo with travis to compile tex files.
